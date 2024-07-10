@@ -12,6 +12,7 @@ public class L04_02 {
     public static void main(String[] args) {
         // 'new' 키워드를 이용한 초기화
         // 'new' 키워드는 메모리를 동적으로 할당한 후 해당 메모리의 주소를 반환하는 연산자(opeartor)이다.
+        // 'new' 키워드를 통해 배열 변수를 초기화할 수 있다.
         short[]     arrShort    = new short[3];
 
         // 'new' 키워드로 배열 변수를 초기화하는 과정은 다음과 같다.
