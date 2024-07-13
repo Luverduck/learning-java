@@ -26,17 +26,17 @@ public class L01_01 {
 
         // ✅ 연산자의 피연산자 개수
         // - 단항 연산자 (Unary Operator)
-        int f = +a;
+        int g = +a;
         // - 이항 연산자 (Binary Operator)
-        int g = a + 3;
+        int h = a + 3;
         // - 삼항 연산자 (Ternary Operator)
-        int g = (b == true) ? 1 : 0;
+        int i = (b == true) ? 1 : 0;
 
         // ✅ 연산자의 결합성 (Associative)
         // - 왼쪽 결합성 (Left-associative)
-        int h = a + d + e + 4;
+        int j = a + d + e + 4;
         // - 오른쪽 결합성 (Right-associative)
-        int i = a += d += e += 4;
+        int k = a += d += e += 4;
 
         // ✅ 연산자의 우선순위 (Precedence)
     }
