@@ -7,7 +7,7 @@ package s04_05;
 
 public class L05_01 {
     public static void main(String[] args) {
-        short x = 0b10100110;
+        short x = 0b10110110;
         short y = 0b11011100;
 
         // &        두 피연산자의 대응되는 비트가 모두 1이면 1을 반환한다.        (비트 AND 연산)
