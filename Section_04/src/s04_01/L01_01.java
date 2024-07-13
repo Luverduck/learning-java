@@ -11,32 +11,36 @@ public class L01_01 {
         // 연산자의 종류
         // 연산자는 크게 4가지 기준에 따라 분류할 수 있다.
         // ✅ 연산자의 기능
+        // - 부호 연산자 (Sign Operator)
+        int a = -1;
+        // - 증감 연산자 (Increment and Decrement Operator)
+        int b = a++;
         // - 산술 연산자 (Arithmetic Operator)
-        int a = 1 + 2;
-        // - 비교 연산자 (Relational Operator)
-        boolean b = 1 > 2;
-        // - 논리 연산자 (Logical Operator)
-        boolean c = true && false;
+        int c = 1 + 2;
         // - 비트 연산자 (Bitwise Operator)
         int d = 0b1011 ^ 0b1101;
+        // - 비교 연산자 (Relational Operator)
+        boolean e = 1 > 2;
+        // - 논리 연산자 (Logical Operator)
+        boolean f = true && false;
         // - 대입 연산자 (Assignment Operator)
-        int e = 0;
+        int g = 0;
         // - instanceof 연산자
-        boolean f = "TEST" instanceof String;
+        boolean h = "TEST" instanceof String;
 
         // ✅ 연산자의 피연산자 개수
         // - 단항 연산자 (Unary Operator)
-        int g = +a;
+        int i = +a;
         // - 이항 연산자 (Binary Operator)
-        int h = a + 3;
+        int j = a + 3;
         // - 삼항 연산자 (Ternary Operator)
-        int i = (b == true) ? 1 : 0;
+        int k = (3 % 2 == 0) ? 1 : 0;
 
         // ✅ 연산자의 결합성 (Associative)
         // - 왼쪽 결합성 (Left-associative)
-        int j = a + d + e + 4;
+        int l = a + b + c + d;
         // - 오른쪽 결합성 (Right-associative)
-        int k = a += d += e += 4;
+        int m = a += b += c += d;
 
         // ✅ 연산자의 우선순위 (Precedence)
     }
