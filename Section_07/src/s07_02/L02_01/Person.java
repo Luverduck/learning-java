@@ -19,27 +19,16 @@ public class Person {
     // ✅ 필드(Field)
     String          name;               // 변수
     int             age;
-    final String    species = "사람";  // 상수화된 변수
+    final String    species = "사람";    // 상수화된 변수
 
     // ✅ 메소드(Method)
+    void intro() {
+        System.out.println("종 : " + species);
+    }
     void intro(String name) {
-        System.out.println("이름 : " + name);
+        System.out.println("종 : " + species + ", 이름 : " + name);
     }
     void intro(String name, int age) {
-        System.out.println("이름 : " + name + ", 나이 : " + age);
-    }
-    void intro(String name, int age, String spacies) {
-        System.out.println("이름 : " + name + ", 나이 : " + age + ", 종 : " + spacies);
-    }
-
-    // 생성자 (Constructor)
-    Person() {
-        System.out.println(species + " 생성");
-    }
-    Person(String name) {
-        System.out.println(species + " " + name + " 생성");
-    }
-    Person(String name, int age) {
-        System.out.println(species + " " + name + " " + age + "살" + " 생성");
+        System.out.println("종 : " + species + ", 이름 : " + name + ", 나이 : " + age);
     }
 }
