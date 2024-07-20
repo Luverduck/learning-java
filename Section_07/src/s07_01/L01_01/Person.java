@@ -18,4 +18,9 @@ public class Person {
     void intro(String name, int age) {
         System.out.println("name : " + name + ", age : " + age);
     }
+    // ✅ 생성자(Constructor)
+    // - 클래스 안에 정의된 함수(Function) 중 하나로, 클래스로부터 객체를 생성할 때 호출된다.
+    Person() {
+        System.out.println("사람 생성");
+    }
 }
