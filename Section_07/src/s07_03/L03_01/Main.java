@@ -1,4 +1,4 @@
-package s07_03.L03_02;
+package s07_03.L03_01;
 
 /**
  * 클래스의 인스턴스화 (instantiation)
@@ -9,9 +9,7 @@ package s07_03.L03_02;
 
 public class Main {
     public static void main(String[] args) {
-        // 오버로딩된 생성자의 호출
-        HYChicken headQuarter   = new HYChicken();
-        HYChicken chain1        = new HYChicken(1, "강남");
-        HYChicken chain2        = new HYChicken(1, "잠실", 30000);
+        // 생성자 호출을 통한 객체 생성
+        HYChicken headQuarter = new HYChicken();
     }
 }
