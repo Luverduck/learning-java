@@ -9,7 +9,10 @@ package s07_03.L03_01;
 
 public class Main {
     public static void main(String[] args) {
-        // 생성자 호출을 통한 객체 생성
-        HYChicken headQuarter = new HYChicken();
+        // 기본 생성자 호출
+        HYChicken headQuarter   = new HYChicken();
+        // 오버로딩된 생성자의 호출
+        HYChicken chain1        = new HYChicken(1, "강남");
+        HYChicken chain2        = new HYChicken(1, "잠실", 30000);
     }
 }
