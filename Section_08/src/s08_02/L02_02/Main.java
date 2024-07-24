@@ -18,9 +18,5 @@ public class Main {
         // 다운 캐스팅은 컴파일러에 의해 자동으로 수행되지 않으며 사용자가 직접 명시해야 한다.
         Button button = new Button();
         ToggleButton toggleButton = (ToggleButton)button;
-        // 상위 클래스 멤버 접근 🟢
-        toggleButton.print();
-        // 하위 클래스 멤버 접근 🟢
-        toggleButton.toggle();
     }
 }

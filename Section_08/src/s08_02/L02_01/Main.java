@@ -17,9 +17,5 @@ public class Main {
         // 하위 클래스 인스턴스의 자료형을 상위 클래스 자료형으로 형 변환하는 것
         // 업 캐스팅은 컴파일러에 의해 자동으로 수행된다.
         Button button = new ToggleButton();
-        // 상위 클래스 멤버 접근 🟢
-        button.print();
-        // 하위 클래스 멤버 접근 ❌
-        //button.toggle();
     }
 }
