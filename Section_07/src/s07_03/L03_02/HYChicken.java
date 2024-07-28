@@ -1,10 +1,10 @@
-package s07_03.L03_01;
+package s07_03.L03_02;
 
 /**
- * 생성자 (Constructor)
- * 클래스 안에 정의된 함수(Function) 중 하나로, 클래스로부터 객체를 생성할 때 호출된다.
- * 생성자는 클래스의 이름과 일치하며 반환형을 명시하지 않는다.
- * 또한 return 문이 없어도 해당 클래스 자료형의 인스턴스를 반환한다.
+ * 기본 생성자 (Default Constructor)
+ * 매개변수가 없는 생성자를 기본 생성자(Default Constructor)라 한다.
+ * 기본 생성자는 인스턴스 필드의 값을 자료형의 기본값으로 초기화한다.
+ * 기본 생성자는 명시적으로 정의하지 않아도 인스턴스 생성시 호출할 수 있다.
  */
 
 public class HYChicken {
@@ -20,10 +20,13 @@ public class HYChicken {
     }
 
     // ✅ 생성자 (Constructor)
-    HYChicken(int pNo, String pLocation, int pChainSales) {
+    /*HYChicken(int pNo, String pLocation, int pChainSales) {
         no = pNo;
         location = pLocation;
         chainSales = pChainSales;
         System.out.printf("%s %d호 %s점 생성 (매출 : %d원)\n", brand, no, location, chainSales);
+    }*/
+    HYChicken() {
+        System.out.println("HY치킨 생성");
     }
 }
