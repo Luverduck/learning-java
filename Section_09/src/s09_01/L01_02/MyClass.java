@@ -12,11 +12,10 @@ public class MyClass implements MyInterface {
     // 필드 (Field)
     String cField = "클래스의 필드";
 
-    // 메소드 (Method)
+    // ✅ 메소드 (Method)
     @Override
     public void abstractMethod() {
-        System.out.println(iField); // 인터페이스의 final 필드에 접근 가능
-        System.out.println(cField);
+        System.out.println("구현된 추상 메소드 실행");
     }
 
 }
