@@ -16,9 +16,9 @@ package s09_01.L01_01;
 public interface MyInterface {
 
     // ✅ final 필드
-    final String interfaceField = "인터페이스의 final 필드";
+    final String iField = "인터페이스의 final 필드";
 
     // ✅ 추상 메소드
-    void print();
+    void abstractMethod();
 
 }
