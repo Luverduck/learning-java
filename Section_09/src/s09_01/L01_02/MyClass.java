@@ -18,4 +18,5 @@ public class MyClass implements MyInterface {
         System.out.println(iField); // 인터페이스의 final 필드에 접근 가능
         System.out.println(cField);
     }
+
 }
