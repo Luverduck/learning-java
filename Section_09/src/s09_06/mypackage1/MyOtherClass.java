@@ -1,0 +1,19 @@
+package s09_06.mypackage1;
+
+public class MyOtherClass {
+
+    MyClass myClass;
+
+    // 메소드(Method)
+    void method() {
+        // ✅ 같은 패키지의 일반 클래스에서 MyClass 클래스의 멤버 접근 제한
+        // public 멤버 접근 ⭕
+        System.out.println(myClass.m_public);
+        // protected 멤버 접근 ⭕
+        System.out.println(myClass.m_protected);
+        // 접근 제한자가 없는 멤버 접근 ⭕
+        System.out.println(myClass.m_default);
+        // private 멤버 접근 ❌
+        // System.out.println(myClass.m_private);
+    }
+}
