@@ -1,6 +1,6 @@
-package s09_06.mypackage2;
+package s09_08.L08_01.mypackage2;
 
-import s09_06.mypackage1.MyClass;
+import s09_08.L08_01.mypackage1.MyClass;
 
 public class MyOuterClass {
 

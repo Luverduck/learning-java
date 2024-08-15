@@ -1,4 +1,4 @@
-package s09_06.mypackage1;
+package s09_08.L08_01.mypackage1;
 
 public class MyOtherClass {
 
