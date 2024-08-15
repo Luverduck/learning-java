@@ -1,4 +1,4 @@
-package s09_05.L05_02.mypackage;
+package s09_07.L07_02.mypackage;
 
 public interface MyInterface {
 
