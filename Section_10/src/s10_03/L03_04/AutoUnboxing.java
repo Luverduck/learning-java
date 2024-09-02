@@ -1,4 +1,4 @@
-package s10_04.L04_01;
+package s10_03.L03_04;
 
 /**
  * 자동 박싱(Auto Boxing)과 자동 언박싱 (Auto Unboxing)
