@@ -1,4 +1,4 @@
-package S10_06.L06_01;
+package s10_06.L06_01;
 
 /**
  * 박싱 (Boxing)
