@@ -1,4 +1,4 @@
-package s01.sub04;
+package s10_01.sub01_04;
 
 /**
  * 오류 (Error)
