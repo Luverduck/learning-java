@@ -17,7 +17,7 @@ public class ArrayAssignment {
         System.out.println("%d %d %d".formatted(iArrayOrigin[0], iArrayOrigin[1], iArrayOrigin[2]));
         System.out.println("%d %d %d".formatted(iArrayTemp[0], iArrayTemp[1], iArrayTemp[2]));
 
-        // iArrayTemp의 0번째 요소의 값을 5로 변경
+        // iArrayTemp의 1번째 요소의 값을 6로 변경
         iArrayOrigin[1] = 6;
         System.out.println("%d %d %d".formatted(iArrayOrigin[0], iArrayOrigin[1], iArrayOrigin[2]));
         System.out.println("%d %d %d".formatted(iArrayTemp[0], iArrayTemp[1], iArrayTemp[2]));
