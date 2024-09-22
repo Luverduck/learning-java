@@ -1,4 +1,4 @@
-package part_01.chapter_04.s04_02;
+package part_01.chapter_04.s04_02.t02_01;
 
 public class SignOperator {
     public static void main(String[] args) {
