@@ -4,9 +4,9 @@ public class SignOperator {
     public static void main(String[] args) {
 
         // 부호 연산자 (Sign Operator)
-        int num = 10;
-        System.out.println(+num);
-        System.out.println(-num);
+        int x = 10;
+        System.out.println(+x);
+        System.out.println(-x);
 
     }
 }
