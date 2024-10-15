@@ -21,22 +21,22 @@ public class NestedTry {
     }
 
     // vMethod 메소드
-    static void vMethod(int iParam) {
+    static void vMethod(int x) {
         System.out.println("vMethod 호출");
         try {
             try {
-                if(iParam == 1) iParam = iParam / (iParam - iParam);
-                if(iParam == 2) {
-                    int[] arr = new int[iParam];
-                    arr[iParam] = 20;
+                if(x == 1) x = x / (x - x);
+                if(x == 2) {
+                    int[] arr = new int[x];
+                    arr[x] = 20;
                 }
             }
             catch(ArithmeticException e) {
-                System.out.println("내부 catch절 실행 [ %s ]".formatted(e.toString()));
+                System.out.println("vMethod의 내부 catch절 실행 [ %s ]".formatted(e.toString()));
             }
         }
         catch(ArrayIndexOutOfBoundsException e) {
-            System.out.println("외부 catch절 실행 [ %s ]".formatted(e.toString()));
+            System.out.println("vMethod의 외부 catch절 실행 [ %s ]".formatted(e.toString()));
         }
         System.out.println("vMethod 종료");
     }

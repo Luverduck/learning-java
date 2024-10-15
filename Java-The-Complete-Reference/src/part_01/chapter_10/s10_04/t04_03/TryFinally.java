@@ -22,7 +22,7 @@ public class TryFinally {
 
     // vMethod1 메소드
     static void vMethod1() {
-        System.out.println("method1 호출");
+        System.out.println("vMethod1 호출");
         try {
             System.out.println("vMethod1의 try 블록 실행");
             vMethod2();
@@ -33,19 +33,19 @@ public class TryFinally {
         finally {
             System.out.println("vMethod1의 finally 블록 실행");
         }
-        System.out.println("method1 종료");
+        System.out.println("vMethod1 종료");
     }
 
     // vMethod2 메소드
     static void vMethod2() {
-        System.out.println("method2 호출");
+        System.out.println("vMethod2 호출");
         vMethod3();
-        System.out.println("method2 종료");
+        System.out.println("vMethod2 종료");
     }
 
     // vMethod3 메소드
     static void vMethod3() {
-        System.out.println("method3 호출");
+        System.out.println("vMethod3 호출");
         try {
             System.out.println("vMethod3의 try 블록 실행");
             int x = 10;
@@ -55,7 +55,7 @@ public class TryFinally {
         finally {
             System.out.println("vMethod3의 finally 블록 실행");
         }
-        System.out.println("method3 종료");
+        System.out.println("vMethod3 종료");
     }
 
 }

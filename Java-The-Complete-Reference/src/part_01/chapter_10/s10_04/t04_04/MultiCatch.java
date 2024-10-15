@@ -22,6 +22,7 @@ public class MultiCatch {
 
     // vMethod 메소드
     static void vMethod(int iParam) {
+        System.out.println("vMethod 호출");
         try {
             if(iParam == 1)
                 vMethod1(); // IndexOutOfBoundException
@@ -39,31 +40,32 @@ public class MultiCatch {
         catch(Exception e) {
             System.out.println("세 번째 catch 블록 실행 [ %s ]".formatted(e.toString()));
         }
+        System.out.println("vMethod 종료");
     }
 
     // vMethod1 메소드 >> IndexOutOfBoundException
     static void vMethod1() {
-        System.out.println("method1 호출");
+        System.out.println("vMethod1 호출");
         int arr[] = new int[3];
         arr[3] = 10;
-        System.out.println("method1 종료");
+        System.out.println("vMethod1 종료");
     }
 
     // vMethod2 메소드 >> NullPointerException
     static void vMethod2() {
-        System.out.println("method2 호출");
+        System.out.println("vMethod2 호출");
         String str = null;
         str.toLowerCase();
-        System.out.println("method2 종료");
+        System.out.println("vMethod2 종료");
     }
 
     // vMethod3 메소드 >> ArithmeticException
     static void vMethod3() {
-        System.out.println("method3 호출");
+        System.out.println("vMethod3 호출");
         int x = 10;
         int y = 0;
         int res = x / y;
-        System.out.println("method3 종료");
+        System.out.println("vMethod3 종료");
     }
 
 }

@@ -22,14 +22,14 @@ public class CaughtException {
 
     // vMethod1 메소드
     static void vMethod1() {
-        System.out.println("method1 호출");
+        System.out.println("vMethod1 호출");
         vMethod2();
-        System.out.println("method1 종료");
+        System.out.println("vMethod1 종료");
     }
 
     // vMethod2 메소드
     static void vMethod2() {
-        System.out.println("method2 호출");
+        System.out.println("vMethod2 호출");
         // vMethod3 메소드에서 발생한 예외 처리
         try {
             vMethod3();
@@ -37,16 +37,16 @@ public class CaughtException {
         catch(Exception e) {
             System.out.println("처리된 예외 : " + e.toString());
         }
-        System.out.println("method2 종료");
+        System.out.println("vMethod2 종료");
     }
 
     // vMethod3 메소드
     static void vMethod3() {
-        System.out.println("method3 호출");
+        System.out.println("vMethod3 호출");
         int x = 10;
         int y = 0;
         int ret = x / y;
-        System.out.println("method3 종료");
+        System.out.println("vMethod3 종료");
     }
 
 }
