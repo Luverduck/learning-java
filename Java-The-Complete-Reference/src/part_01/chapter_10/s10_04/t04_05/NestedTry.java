@@ -21,14 +21,14 @@ public class NestedTry {
     }
 
     // vMethod 메소드
-    static void vMethod(int x) {
+    static void vMethod(int iParam) {
         System.out.println("vMethod 호출");
         try {
             try {
-                if(x == 1) x = x / (x - x);
-                if(x == 2) {
-                    int[] arr = new int[x];
-                    arr[x] = 20;
+                if(iParam == 1) iParam = iParam / (iParam - iParam);
+                if(iParam == 2) {
+                    int[] arr = new int[iParam];
+                    arr[iParam] = 20;
                 }
             }
             catch(ArithmeticException e) {

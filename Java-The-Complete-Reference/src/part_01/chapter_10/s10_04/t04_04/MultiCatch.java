@@ -14,26 +14,31 @@ public class MultiCatch {
             System.out.println("입력 (0을 입력하는 경우 종료) : ");
             input = sc.nextInt();
             if(input == 0) break;
-            try {
-                if(input == 1)
-                    vMethod1(); // IndexOutOfBoundException
-                else if(input == 2)
-                    vMethod2(); // NullPointerException
-                else if(input == 3)
-                    vMethod3(); // ArithmeticException
-            }
-            catch(IndexOutOfBoundsException e) {
-                System.out.println("첫 번째 catch 블록 실행 [ %s ]".formatted(e.toString()));
-            }
-            catch(NullPointerException e) {
-                System.out.println("두 번째 catch 블록 실행 [ %s ]".formatted(e.toString()));
-            }
-            catch(Exception e) {
-                System.out.println("세 번째 catch 블록 실행 [ %s ]".formatted(e.toString()));
-            }
+            vMethod(input);
         }
         System.out.println("프로그램 종료");
         sc.close();
+    }
+
+    // vMethod 메소드
+    static void vMethod(int iParam) {
+        try {
+            if(iParam == 1)
+                vMethod1(); // IndexOutOfBoundException
+            else if(iParam == 2)
+                vMethod2(); // NullPointerException
+            else if(iParam == 3)
+                vMethod3(); // ArithmeticException
+        }
+        catch(IndexOutOfBoundsException e) {
+            System.out.println("첫 번째 catch 블록 실행 [ %s ]".formatted(e.toString()));
+        }
+        catch(NullPointerException e) {
+            System.out.println("두 번째 catch 블록 실행 [ %s ]".formatted(e.toString()));
+        }
+        catch(Exception e) {
+            System.out.println("세 번째 catch 블록 실행 [ %s ]".formatted(e.toString()));
+        }
     }
 
     // vMethod1 메소드 >> IndexOutOfBoundException
