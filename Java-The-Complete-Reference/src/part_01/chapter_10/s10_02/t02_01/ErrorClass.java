@@ -1,4 +1,4 @@
-package part_01.chapter_10.s10_02.s02_01;
+package part_01.chapter_10.s10_02.t02_01;
 
 public class ErrorClass {
     public static void main(String[] args) {
