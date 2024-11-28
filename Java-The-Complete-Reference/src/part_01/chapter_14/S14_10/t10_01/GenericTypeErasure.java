@@ -1,4 +1,4 @@
-package part_01.chapter_14.s14_09.t09_01;
+package part_01.chapter_14.s14_10.t10_01;
 
 public class GenericTypeErasure {
     public static void main(String[] args) {
